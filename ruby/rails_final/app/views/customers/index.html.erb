@@ -1,0 +1,13 @@
+<h1>Index Page</h1>
+
+<p>This page should show an index of all users</p>
+
+<ul>
+<% @customers.each do |customer| %>
+<li>ID: <%= link_to customer.id, customer_path(customer) %>, First Name: <%= customer.first_name %>,     
+	Last Name: <%= customer.last_name %>. <%= link_to "Edit user", edit_customer_path(customer) %> </li>
+
+<% end %>
+</ul>
+
+<p>To create a new customer, check this: <%=link_to "New Customer Link", new_customer_path %> </p>

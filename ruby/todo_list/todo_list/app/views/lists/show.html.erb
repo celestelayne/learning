@@ -1,0 +1,9 @@
+<h1><%= @list.title %></h1>
+
+<ul>
+<% @list.tasks.each do |task| %>
+	<li><%=link_to task.content, list_task_path(@list, task) %>, PRIORITY: <%= task.priority %>, DUE DATE: <%= (task.due_date.to_time - Time.now) %> Seconds</li>
+<% end %>
+</ul>
+
+<%= link_to "Add Task", new_list_task_path(@list) %>

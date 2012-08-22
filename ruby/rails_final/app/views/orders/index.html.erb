@@ -1,0 +1,12 @@
+<h1>Order Index Page</h1>
+
+<p>This page should show an index of all orders</p>
+
+<ul>
+	<% @orders.each do |order| %>
+<li>ID: <%= order.id %>, Name: <%= order.name %>, price: <%= order.price %> <%= link_to "Edit order", edit_order_path(order) %> </li>
+
+<% end %>
+</ul>
+
+<p>To create a new order, check this: <%=link_to "New Order Link", new_order_path %> </p>

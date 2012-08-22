@@ -1,0 +1,16 @@
+<h1>Show page for an individual customer</h1>
+
+<p>First name:<%= @customer.first_name %></p>
+
+<p>Last Name: <%= @customer.last_name %></p>
+
+<p> Edit this dude's info: </p>
+<%= link_to "Edit Customer", edit_customer_path(@customer) %>
+
+<p>This guy's order's</p>
+<ul>
+<% @customer_orders.each do |order| %>
+<li>ID: <%= order.id %>, Name: <%= order.name %>, Price: <%= order.price %>
+<% end %>
+</ul>
+<%= link_to "Go Back to the root", root_path %>

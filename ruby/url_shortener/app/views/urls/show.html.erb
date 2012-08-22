@@ -1,0 +1,13 @@
+<h1>Success!!</h1>
+
+<p> ID: <%= @url.id %> </p>
+<p> Shortened_url:  <%= @url.shortened_url %> </p>
+<p>--------------------------</p>
+<p> Original Url: <%= @url.original_url %> </p>
+
+<%= link_to @url.shortened_url  , @url.original_url  %>
+
+<br />
+
+
+<%= link_to "sign up", @url.shortened_url %>

@@ -1,0 +1,23 @@
+<%= form_for [@list, @task] do |f| %>
+	<%= f.label :content %>
+	<%= f.text_area :content %>
+	
+	<br />
+	
+	<%= f.label :priority %>
+	<%= f.number_field  :priority %>
+	
+	<br />
+	
+	<%= f.label :due_date %>
+	<%= f.date_select :due_date %>
+	
+	<br />
+	
+	<%= f.label :state, "Completed? " %>
+	<%= f.check_box :state %>
+	
+	<br />
+	
+	<%= f.submit " Submit " %>	
+<% end %>

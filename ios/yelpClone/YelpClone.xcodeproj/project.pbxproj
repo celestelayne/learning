@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D69BD804E2C4BE994192C32 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8912B3695145759B67138F /* libPods.a */; };
+		3460F87815DC4C9D00722BA6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3460F87715DC4C9D00722BA6 /* MapKit.framework */; };
+		3460F87C15DC538D00722BA6 /* SimpleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460F87B15DC538D00722BA6 /* SimpleAnnotation.m */; };
+		3460F88015DC82EE00722BA6 /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3460F87E15DC82EE00722BA6 /* ReviewViewController.m */; };
+		3460F88115DC82EE00722BA6 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3460F87F15DC82EE00722BA6 /* ReviewViewController.xib */; };
+		34B607C915DB1F9E005BC75E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B607C815DB1F9E005BC75E /* UIKit.framework */; };
+		34B607CB15DB1F9E005BC75E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B607CA15DB1F9E005BC75E /* Foundation.framework */; };
+		34B607CD15DB1F9E005BC75E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B607CC15DB1F9E005BC75E /* CoreGraphics.framework */; };
+		34B607D315DB1F9E005BC75E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34B607D115DB1F9E005BC75E /* InfoPlist.strings */; };
+		34B607D515DB1F9E005BC75E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B607D415DB1F9E005BC75E /* main.m */; };
+		34B607D915DB1F9E005BC75E /* YelpCloneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B607D815DB1F9E005BC75E /* YelpCloneAppDelegate.m */; };
+		34B607DC15DB1F9E005BC75E /* YelpCloneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B607DB15DB1F9E005BC75E /* YelpCloneViewController.m */; };
+		34B607DF15DB1F9E005BC75E /* YelpCloneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B607DD15DB1F9E005BC75E /* YelpCloneViewController.xib */; };
+		34B607F115DB3392005BC75E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B607F015DB3392005BC75E /* CoreLocation.framework */; };
+		9A93ED0815DD9C6A0036A307 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A93ED0715DD9C6A0036A307 /* Parse.framework */; };
+		9A93ED0B15DD9CA40036A307 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A93ED0A15DD9CA40036A307 /* AudioToolbox.framework */; };
+		9A93ED0D15DD9CBB0036A307 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A93ED0C15DD9CBB0036A307 /* CFNetwork.framework */; };
+		9A93ED0F15DD9CD70036A307 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A93ED0E15DD9CD70036A307 /* libz.1.1.3.dylib */; };
+		9A93ED1115DD9CEF0036A307 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A93ED1015DD9CEF0036A307 /* MobileCoreServices.framework */; };
+		9A93ED1315DD9CFC0036A307 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A93ED1215DD9CFC0036A307 /* QuartzCore.framework */; };
+		9A93ED1515DD9D1A0036A307 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A93ED1415DD9D1A0036A307 /* Security.framework */; };
+		9A93ED1715DD9D210036A307 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A93ED1615DD9D210036A307 /* StoreKit.framework */; };
+		9A93ED1915DD9D340036A307 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A93ED1815DD9D340036A307 /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		060DB132E4E249058C8DEFA3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		3460F87715DC4C9D00722BA6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3460F87A15DC538D00722BA6 /* SimpleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAnnotation.h; sourceTree = "<group>"; };
+		3460F87B15DC538D00722BA6 /* SimpleAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAnnotation.m; sourceTree = "<group>"; };
+		3460F87D15DC82EE00722BA6 /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		3460F87E15DC82EE00722BA6 /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
+		3460F87F15DC82EE00722BA6 /* ReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
+		34B607C415DB1F9E005BC75E /* YelpClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B607C815DB1F9E005BC75E /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		34B607CA15DB1F9E005BC75E /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		34B607CC15DB1F9E005BC75E /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		34B607D015DB1F9E005BC75E /* YelpClone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YelpClone-Info.plist"; sourceTree = "<group>"; };
+		34B607D215DB1F9E005BC75E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		34B607D415DB1F9E005BC75E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34B607D615DB1F9E005BC75E /* YelpClone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YelpClone-Prefix.pch"; sourceTree = "<group>"; };
+		34B607D715DB1F9E005BC75E /* YelpCloneAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YelpCloneAppDelegate.h; sourceTree = "<group>"; };
+		34B607D815DB1F9E005BC75E /* YelpCloneAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpCloneAppDelegate.m; sourceTree = "<group>"; };
+		34B607DA15DB1F9E005BC75E /* YelpCloneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YelpCloneViewController.h; sourceTree = "<group>"; };
+		34B607DB15DB1F9E005BC75E /* YelpCloneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YelpCloneViewController.m; sourceTree = "<group>"; };
+		34B607DE15DB1F9E005BC75E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/YelpCloneViewController.xib; sourceTree = "<group>"; };
+		34B607F015DB3392005BC75E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4F8912B3695145759B67138F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A93ED0715DD9C6A0036A307 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9A93ED0A15DD9CA40036A307 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9A93ED0C15DD9CBB0036A307 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9A93ED0E15DD9CD70036A307 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		9A93ED1015DD9CEF0036A307 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9A93ED1215DD9CFC0036A307 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9A93ED1415DD9D1A0036A307 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9A93ED1615DD9D210036A307 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		9A93ED1815DD9D340036A307 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34B607C115DB1F9E005BC75E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A93ED1915DD9D340036A307 /* SystemConfiguration.framework in Frameworks */,
+				9A93ED1715DD9D210036A307 /* StoreKit.framework in Frameworks */,
+				9A93ED1515DD9D1A0036A307 /* Security.framework in Frameworks */,
+				9A93ED1315DD9CFC0036A307 /* QuartzCore.framework in Frameworks */,
+				9A93ED1115DD9CEF0036A307 /* MobileCoreServices.framework in Frameworks */,
+				9A93ED0F15DD9CD70036A307 /* libz.1.1.3.dylib in Frameworks */,
+				34B607CD15DB1F9E005BC75E /* CoreGraphics.framework in Frameworks */,
+				9A93ED0D15DD9CBB0036A307 /* CFNetwork.framework in Frameworks */,
+				9A93ED0B15DD9CA40036A307 /* AudioToolbox.framework in Frameworks */,
+				3460F87815DC4C9D00722BA6 /* MapKit.framework in Frameworks */,
+				34B607F115DB3392005BC75E /* CoreLocation.framework in Frameworks */,
+				34B607C915DB1F9E005BC75E /* UIKit.framework in Frameworks */,
+				34B607CB15DB1F9E005BC75E /* Foundation.framework in Frameworks */,
+				0D69BD804E2C4BE994192C32 /* libPods.a in Frameworks */,
+				9A93ED0815DD9C6A0036A307 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34B607B915DB1F9E005BC75E = {
+			isa = PBXGroup;
+			children = (
+				9A93ED1815DD9D340036A307 /* SystemConfiguration.framework */,
+				9A93ED1615DD9D210036A307 /* StoreKit.framework */,
+				9A93ED1415DD9D1A0036A307 /* Security.framework */,
+				9A93ED1215DD9CFC0036A307 /* QuartzCore.framework */,
+				9A93ED1015DD9CEF0036A307 /* MobileCoreServices.framework */,
+				9A93ED0E15DD9CD70036A307 /* libz.1.1.3.dylib */,
+				9A93ED0C15DD9CBB0036A307 /* CFNetwork.framework */,
+				9A93ED0A15DD9CA40036A307 /* AudioToolbox.framework */,
+				3460F87715DC4C9D00722BA6 /* MapKit.framework */,
+				34B607CE15DB1F9E005BC75E /* YelpClone */,
+				34B607C715DB1F9E005BC75E /* Frameworks */,
+				34B607C515DB1F9E005BC75E /* Products */,
+				060DB132E4E249058C8DEFA3 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		34B607C515DB1F9E005BC75E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34B607C415DB1F9E005BC75E /* YelpClone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34B607C715DB1F9E005BC75E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A93ED0715DD9C6A0036A307 /* Parse.framework */,
+				34B607F015DB3392005BC75E /* CoreLocation.framework */,
+				34B607C815DB1F9E005BC75E /* UIKit.framework */,
+				34B607CA15DB1F9E005BC75E /* Foundation.framework */,
+				34B607CC15DB1F9E005BC75E /* CoreGraphics.framework */,
+				4F8912B3695145759B67138F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		34B607CE15DB1F9E005BC75E /* YelpClone */ = {
+			isa = PBXGroup;
+			children = (
+				34B607D715DB1F9E005BC75E /* YelpCloneAppDelegate.h */,
+				34B607D815DB1F9E005BC75E /* YelpCloneAppDelegate.m */,
+				34B607DA15DB1F9E005BC75E /* YelpCloneViewController.h */,
+				34B607DB15DB1F9E005BC75E /* YelpCloneViewController.m */,
+				34B607DD15DB1F9E005BC75E /* YelpCloneViewController.xib */,
+				3460F87D15DC82EE00722BA6 /* ReviewViewController.h */,
+				3460F87E15DC82EE00722BA6 /* ReviewViewController.m */,
+				3460F87F15DC82EE00722BA6 /* ReviewViewController.xib */,
+				3460F87A15DC538D00722BA6 /* SimpleAnnotation.h */,
+				3460F87B15DC538D00722BA6 /* SimpleAnnotation.m */,
+				34B607CF15DB1F9E005BC75E /* Supporting Files */,
+			);
+			path = YelpClone;
+			sourceTree = "<group>";
+		};
+		34B607CF15DB1F9E005BC75E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34B607D015DB1F9E005BC75E /* YelpClone-Info.plist */,
+				34B607D115DB1F9E005BC75E /* InfoPlist.strings */,
+				34B607D415DB1F9E005BC75E /* main.m */,
+				34B607D615DB1F9E005BC75E /* YelpClone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34B607C315DB1F9E005BC75E /* YelpClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34B607E215DB1F9E005BC75E /* Build configuration list for PBXNativeTarget "YelpClone" */;
+			buildPhases = (
+				34B607C015DB1F9E005BC75E /* Sources */,
+				34B607C115DB1F9E005BC75E /* Frameworks */,
+				34B607C215DB1F9E005BC75E /* Resources */,
+				E5E580E8C6E5415CB9796F89 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YelpClone;
+			productName = YelpClone;
+			productReference = 34B607C415DB1F9E005BC75E /* YelpClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34B607BB15DB1F9E005BC75E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YelpClone;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Laura's Empire";
+			};
+			buildConfigurationList = 34B607BE15DB1F9E005BC75E /* Build configuration list for PBXProject "YelpClone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 34B607B915DB1F9E005BC75E;
+			productRefGroup = 34B607C515DB1F9E005BC75E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34B607C315DB1F9E005BC75E /* YelpClone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34B607C215DB1F9E005BC75E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B607D315DB1F9E005BC75E /* InfoPlist.strings in Resources */,
+				34B607DF15DB1F9E005BC75E /* YelpCloneViewController.xib in Resources */,
+				3460F88115DC82EE00722BA6 /* ReviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E5E580E8C6E5415CB9796F89 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34B607C015DB1F9E005BC75E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B607D515DB1F9E005BC75E /* main.m in Sources */,
+				34B607D915DB1F9E005BC75E /* YelpCloneAppDelegate.m in Sources */,
+				34B607DC15DB1F9E005BC75E /* YelpCloneViewController.m in Sources */,
+				3460F87C15DC538D00722BA6 /* SimpleAnnotation.m in Sources */,
+				3460F88015DC82EE00722BA6 /* ReviewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34B607D115DB1F9E005BC75E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34B607D215DB1F9E005BC75E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		34B607DD15DB1F9E005BC75E /* YelpCloneViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34B607DE15DB1F9E005BC75E /* en */,
+			);
+			name = YelpCloneViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34B607E015DB1F9E005BC75E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34B607E115DB1F9E005BC75E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34B607E315DB1F9E005BC75E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060DB132E4E249058C8DEFA3 /* Pods.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YelpClone/YelpClone-Prefix.pch";
+				INFOPLIST_FILE = "YelpClone/YelpClone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		34B607E415DB1F9E005BC75E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 060DB132E4E249058C8DEFA3 /* Pods.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YelpClone/YelpClone-Prefix.pch";
+				INFOPLIST_FILE = "YelpClone/YelpClone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34B607BE15DB1F9E005BC75E /* Build configuration list for PBXProject "YelpClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34B607E015DB1F9E005BC75E /* Debug */,
+				34B607E115DB1F9E005BC75E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34B607E215DB1F9E005BC75E /* Build configuration list for PBXNativeTarget "YelpClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34B607E315DB1F9E005BC75E /* Debug */,
+				34B607E415DB1F9E005BC75E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34B607BB15DB1F9E005BC75E /* Project object */;
+}

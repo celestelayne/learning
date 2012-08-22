@@ -1,0 +1,11 @@
+<h1>Order Number: <%= @order.id %></h1>
+<% current_customer =  Customer.find(@order.customer_id) %>
+
+<h3>The details</h3>
+
+<p>Name of the order: <%= @order.name %></p>
+<br />
+<p>Price: <%= @order.price %></p>
+
+<p>Customer's Details: <%=current_customer.first_name  %> <%= current_customer.last_name %> </p>
+<%= link_to "Jump to the customer's profile", customer_path(current_customer)%>

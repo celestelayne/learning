@@ -1,0 +1,19 @@
+<h1>LISTS INDEX</h1>
+
+List Count: <%= @lists.count %>
+<h2>Lists</h2>
+	<ul>
+		<% @lists.each do |list| %>
+			<li>
+				<div>
+				<%= link_to list.title, list_path(list) %> (task count: <%= list.tasks.count %>)<br/>
+				<%= button_to "Delete this shit", {controller: :lists, action: :destroy, id: list.id }, method: :delete %>
+				</div>
+			</li>
+		<% end %>
+	</ul>
+
+
+	
+<%= link_to "Add a new list", new_list_path %>
+
