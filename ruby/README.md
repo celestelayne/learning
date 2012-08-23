@@ -1,3 +1,3 @@
 # Ruby Learning
 
-This is a collection of some notes and simple projects as I learn Ruby.
+This is a collection of a few simple ruby projects that I've done to learn the language.
