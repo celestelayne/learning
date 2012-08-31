@@ -1,0 +1,1 @@
+Here, we practice CoreData For the first time.
