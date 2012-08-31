@@ -66,11 +66,14 @@ NSManagedObjectModel *diaryModel;
     return result;
 }
 
-+(Entry *)makeNewEntryWithText:(NSString *)text {
++(Entry *)makeNewEntryWithText:(NSString *)text AndWithImage:(UIImage *)image {
     // Make new entry object. Stick text into attribute.
     // Add to context.
     Entry *entry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:[DiaryStore context]];
     entry.text = text;
+    
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.7);
+    entry.photoData = imageData;
     
     return entry;
     

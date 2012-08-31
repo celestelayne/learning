@@ -11,5 +11,6 @@
 @implementation Entry
 
 @dynamic text;
+@dynamic photoData;
 
 @end

@@ -15,7 +15,7 @@
 
 +(NSArray *)allEntries;
 
-+(Entry *)makeNewEntryWithText:(NSString *)text;
++(Entry *)makeNewEntryWithText:(NSString *)text AndWithImage:(UIImage *)image;
 
 +(void)save;
 

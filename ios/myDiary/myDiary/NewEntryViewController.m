@@ -9,23 +9,21 @@
 #import "NewEntryViewController.h"
 #import "DiaryStore.h"
 #import "Entry.h"
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface NewEntryViewController () <UITextViewDelegate>
+@interface NewEntryViewController () <UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *diaryText;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
 @implementation NewEntryViewController
 @synthesize diaryText;
+@synthesize imageView;
 
 
-- (IBAction)SavizzleButtonPressed:(id)sender {
-    NSLog(@"SAVE BUTTON PRESSED!!!!!?!?");
 
-    [DiaryStore makeNewEntryWithText:diaryText.text];
-    [DiaryStore save];
-    [self dismissModalViewControllerAnimated:YES];    
-}
+   
 
 -(BOOL) textViewShouldReturn:(UITextView *)textView {
     [textView resignFirstResponder];
@@ -46,11 +44,16 @@
     [super viewDidLoad];
     self.diaryText.delegate = self;
     // Do any additional setup after loading the view from its nib.
+    UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(save)];
+    UIBarButtonItem *newEntry = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(newPhoto)];
+    self.navigationItem.rightBarButtonItems = @[save, newEntry];
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 - (void)viewDidUnload
 {
     [self setDiaryText:nil];
+    [self setImageView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -60,5 +63,25 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+-(void)newPhoto {
+    UIImagePickerController* photo = [UIImagePickerController new];
+    photo.sourceType = UIImagePickerControllerSourceTypeCamera;
+    photo.mediaTypes = [NSArray arrayWithObject:(NSString*)kUTTypeImage];
+    photo.delegate = self;
+    
+    photo.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:photo animated:YES completion:nil];
+}
 
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    self.imageView.image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void) save {
+    [DiaryStore makeNewEntryWithText:diaryText.text AndWithImage:self.imageView.image];
+    [DiaryStore save];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
 @end

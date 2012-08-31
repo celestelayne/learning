@@ -12,6 +12,7 @@
 
 @interface Entry : NSManagedObject
 
-@property (nonatomic, retain) NSString * text;
+@property (nonatomic, retain) NSString* text;
+@property (nonatomic, retain) NSData* photoData;
 
 @end

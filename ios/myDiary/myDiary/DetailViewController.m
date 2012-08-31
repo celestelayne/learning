@@ -7,13 +7,14 @@
 //
 
 #import "DetailViewController.h"
-#import <MobileCoreServices/MobileCoreServices.h>
+#import "Entry.h"
 
-@interface DetailViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface DetailViewController ()
 
 @end
 
 @implementation DetailViewController
+@synthesize imageView;
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -33,8 +34,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UIBarButtonItem *newEntry = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(newPhoto)];
-        self.navigationItem.rightBarButtonItem = newEntry;
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    UIImage* image = [UIImage imageWithData:self.passingEntry.photoData];
+    self.imageView.image = image;
+    self.entryLabel.text = self.passingEntry.text;
+    
 }
 
 - (void)viewDidUnload
@@ -44,18 +48,6 @@
     // e.g. self.myOutlet = nil;
 }
 
--(void)newPhoto {
-    UIImagePickerController* photo = [UIImagePickerController new];
-    photo.sourceType = UIImagePickerControllerSourceTypeCamera;
-    photo.mediaTypes = [NSArray arrayWithObject:(NSString*)kUTTypeImage];
-    photo.delegate = self;
-    
-    photo.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:photo animated:YES completion:nil];
-}
 
--(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    
-}
 
 @end

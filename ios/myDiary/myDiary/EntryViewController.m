@@ -53,7 +53,7 @@
 }
 
 - (void) new {
-    [self presentViewController:[NewEntryViewController new] animated:YES completion:nil];
+    [self.navigationController pushViewController:[NewEntryViewController new] animated:YES];
 }
 
 #pragma mark - Table view data source
@@ -85,9 +85,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-     DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:nil bundle:nil];
+    DetailViewController *detailViewController = [[DetailViewController alloc] initWithNibName:nil bundle:nil];
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
+    detailViewController.passingEntry = [self.entries objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 @end
