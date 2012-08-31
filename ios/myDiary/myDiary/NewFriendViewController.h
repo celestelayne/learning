@@ -1,5 +1,5 @@
 //
-//  NewEntryViewController.h
+//  NewFriendViewController.h
 //  myDiary
 //
 //  Created by hugo on 8/30/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewEntryViewController : UIViewController
-
-@property (strong) NSArray *friends;
+@interface NewFriendViewController : UIViewController
 
 @end

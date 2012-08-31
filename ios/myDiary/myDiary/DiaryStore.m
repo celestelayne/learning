@@ -9,6 +9,7 @@
 #import <CoreData/CoreData.h>
 #import "DiaryStore.h"
 #import "Entry.h"
+#import "Friend.h"
 
 NSManagedObjectContext *diaryContext;
 NSManagedObjectModel *diaryModel;
@@ -55,16 +56,7 @@ NSManagedObjectModel *diaryModel;
     return diaryContext;
 }
 
-+(NSArray*)allEntries {
-    NSFetchRequest* req = [NSFetchRequest new];
-    req.entity = [[DiaryStore model].entitiesByName objectForKey:@"Entry"];
-    NSError* err;
-    NSArray* result = [[DiaryStore context] executeFetchRequest:req error:&err];
-    if (!result) {
-        [NSException raise:@"FetchFail" format:@"because: %@", [err localizedDescription]];
-    }
-    return result;
-}
+
 
 +(Entry *)makeNewEntryWithText:(NSString *)text AndWithImage:(UIImage *)image {
     // Make new entry object. Stick text into attribute.
@@ -85,6 +77,35 @@ NSManagedObjectModel *diaryModel;
         [NSException raise:@"Save Failed!!" format:@"Reason: %@", [err localizedDescription]];
     }
     NSLog(@"Check saving entry!");
+}
+
+//baller code 
++(NSArray *)getAllFriends {
+    return [self fetch:@"Friend"];
+}
+
++(NSArray*)allEntries {
+    return [self fetch:@"Entry"];
+}
+
++(Friend *)addFriendWithName:(NSString *)name {
+    Friend *friend = [NSEntityDescription insertNewObjectForEntityForName:@"Friend" inManagedObjectContext:[DiaryStore context]];
+    friend.name = name;
+    return friend;
+}
+
+
+
+// Helper Method
++(NSArray*)fetch:(NSString*)key {
+    NSFetchRequest* req = [NSFetchRequest new];
+    req.entity = [[DiaryStore model].entitiesByName objectForKey:key];
+    NSError* err;
+    NSArray* result = [[DiaryStore context] executeFetchRequest:req error:&err];
+    if (!result) {
+        [NSException raise:@"FetchFail" format:@"because: %@", [err localizedDescription]];
+    }
+    return result;
 }
 
 @end

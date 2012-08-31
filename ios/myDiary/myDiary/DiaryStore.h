@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class Entry;
-
+@class Friend;
 
 @interface DiaryStore : NSObject
 
@@ -18,5 +18,8 @@
 +(Entry *)makeNewEntryWithText:(NSString *)text AndWithImage:(UIImage *)image;
 
 +(void)save;
+
++(NSArray *)getAllFriends;
++(Friend *)addFriendWithName:(NSString *)name;
 
 @end

@@ -9,6 +9,7 @@
 #import "NewEntryViewController.h"
 #import "DiaryStore.h"
 #import "Entry.h"
+#import "FriendTableViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 
 @interface NewEntryViewController () <UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
@@ -46,7 +47,8 @@
     // Do any additional setup after loading the view from its nib.
     UIBarButtonItem *save = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(save)];
     UIBarButtonItem *newEntry = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(newPhoto)];
-    self.navigationItem.rightBarButtonItems = @[save, newEntry];
+    UIBarButtonItem *tagFriend = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newFriend)];
+    self.navigationItem.rightBarButtonItems = @[save, newEntry, tagFriend];
     self.imageView.contentMode = UIViewContentModeScaleAspectFit;
 }
 
@@ -63,6 +65,11 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+  // Resign first responder later on...
+}
+
 -(void)newPhoto {
     UIImagePickerController* photo = [UIImagePickerController new];
     photo.sourceType = UIImagePickerControllerSourceTypeCamera;
@@ -83,5 +90,10 @@
     [DiaryStore makeNewEntryWithText:diaryText.text AndWithImage:self.imageView.image];
     [DiaryStore save];
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+-(void) newFriend {
+    FriendTableViewController *friendVC = [FriendTableViewController new];
+    [self.navigationController pushViewController:friendVC animated:YES];
 }
 @end

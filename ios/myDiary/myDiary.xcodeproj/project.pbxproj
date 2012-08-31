@@ -10,6 +10,11 @@
 		9A02DBAB15F02A2900243DBF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A02DBA915F02A2900243DBF /* DetailViewController.m */; };
 		9A02DBAC15F02A2900243DBF /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A02DBAA15F02A2900243DBF /* DetailViewController.xib */; };
 		9A02DBAF15F02CD300243DBF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A02DBAE15F02CD300243DBF /* MobileCoreServices.framework */; };
+		9A02DBB915F03F9C00243DBF /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A02DBB815F03F9C00243DBF /* Friend.m */; };
+		9A02DBBF15F0400500243DBF /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A02DBBE15F0400500243DBF /* Entry.m */; };
+		9A02DBC215F0442200243DBF /* FriendTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A02DBC115F0442200243DBF /* FriendTableViewController.m */; };
+		9A02DBC615F0446100243DBF /* NewFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A02DBC415F0446100243DBF /* NewFriendViewController.m */; };
+		9A02DBC715F0446100243DBF /* NewFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A02DBC515F0446100243DBF /* NewFriendViewController.xib */; };
 		9A1A720715EFE5EC00799C28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1A720615EFE5EB00799C28 /* UIKit.framework */; };
 		9A1A720915EFE5EC00799C28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1A720815EFE5EC00799C28 /* Foundation.framework */; };
 		9A1A720B15EFE5EC00799C28 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1A720A15EFE5EC00799C28 /* CoreGraphics.framework */; };
@@ -18,9 +23,6 @@
 		9A1A721515EFE5EC00799C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A721415EFE5EC00799C28 /* main.m */; };
 		9A1A721915EFE5EC00799C28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A721815EFE5EC00799C28 /* AppDelegate.m */; };
 		9A1A721C15EFE5EC00799C28 /* myDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A721A15EFE5EC00799C28 /* myDiary.xcdatamodeld */; };
-		9A1A722515EFE6A200799C28 /* DiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A722315EFE6A200799C28 /* DiaryViewController.m */; };
-		9A1A722615EFE6A200799C28 /* DiaryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1A722415EFE6A200799C28 /* DiaryViewController.xib */; };
-		9A1A722915F00D1100799C28 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A722815F00D1100799C28 /* Entry.m */; };
 		9A1A722C15F00D9300799C28 /* DiaryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A722B15F00D9300799C28 /* DiaryStore.m */; };
 		9A1A723015F0102B00799C28 /* NewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1A722E15F0102B00799C28 /* NewEntryViewController.m */; };
 		9A1A723115F0102B00799C28 /* NewEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A1A722F15F0102B00799C28 /* NewEntryViewController.xib */; };
@@ -32,6 +34,15 @@
 		9A02DBA915F02A2900243DBF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9A02DBAA15F02A2900243DBF /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		9A02DBAE15F02CD300243DBF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9A02DBB715F03F9C00243DBF /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		9A02DBB815F03F9C00243DBF /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		9A02DBBD15F0400500243DBF /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		9A02DBBE15F0400500243DBF /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		9A02DBC015F0442200243DBF /* FriendTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendTableViewController.h; sourceTree = "<group>"; };
+		9A02DBC115F0442200243DBF /* FriendTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendTableViewController.m; sourceTree = "<group>"; };
+		9A02DBC315F0446100243DBF /* NewFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFriendViewController.h; sourceTree = "<group>"; };
+		9A02DBC415F0446100243DBF /* NewFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFriendViewController.m; sourceTree = "<group>"; };
+		9A02DBC515F0446100243DBF /* NewFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewFriendViewController.xib; sourceTree = "<group>"; };
 		9A1A720215EFE5EB00799C28 /* myDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1A720615EFE5EB00799C28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A1A720815EFE5EC00799C28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,11 +55,6 @@
 		9A1A721715EFE5EC00799C28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A1A721815EFE5EC00799C28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9A1A721B15EFE5EC00799C28 /* myDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myDiary.xcdatamodel; sourceTree = "<group>"; };
-		9A1A722215EFE6A200799C28 /* DiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryViewController.h; sourceTree = "<group>"; };
-		9A1A722315EFE6A200799C28 /* DiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryViewController.m; sourceTree = "<group>"; };
-		9A1A722415EFE6A200799C28 /* DiaryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiaryViewController.xib; sourceTree = "<group>"; };
-		9A1A722715F00D1100799C28 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
-		9A1A722815F00D1100799C28 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		9A1A722A15F00D9300799C28 /* DiaryStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryStore.h; sourceTree = "<group>"; };
 		9A1A722B15F00D9300799C28 /* DiaryStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryStore.m; sourceTree = "<group>"; };
 		9A1A722D15F0102B00799C28 /* NewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEntryViewController.h; sourceTree = "<group>"; };
@@ -74,6 +80,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A02DBB315F03E2200243DBF /* databaseStuff */ = {
+			isa = PBXGroup;
+			children = (
+				9A1A721A15EFE5EC00799C28 /* myDiary.xcdatamodeld */,
+				9A02DBBD15F0400500243DBF /* Entry.h */,
+				9A02DBBE15F0400500243DBF /* Entry.m */,
+				9A02DBB715F03F9C00243DBF /* Friend.h */,
+				9A02DBB815F03F9C00243DBF /* Friend.m */,
+				9A1A722A15F00D9300799C28 /* DiaryStore.h */,
+				9A1A722B15F00D9300799C28 /* DiaryStore.m */,
+			);
+			name = databaseStuff;
+			sourceTree = "<group>";
+		};
+		9A02DBC815F0446A00243DBF /* newFriends */ = {
+			isa = PBXGroup;
+			children = (
+				9A02DBC015F0442200243DBF /* FriendTableViewController.h */,
+				9A02DBC115F0442200243DBF /* FriendTableViewController.m */,
+				9A02DBC315F0446100243DBF /* NewFriendViewController.h */,
+				9A02DBC415F0446100243DBF /* NewFriendViewController.m */,
+				9A02DBC515F0446100243DBF /* NewFriendViewController.xib */,
+			);
+			name = newFriends;
+			sourceTree = "<group>";
+		};
+		9A02DBC915F0448900243DBF /* entryStuff */ = {
+			isa = PBXGroup;
+			children = (
+				9A1A723215F0182500799C28 /* EntryViewController.h */,
+				9A1A723315F0182500799C28 /* EntryViewController.m */,
+				9A1A722D15F0102B00799C28 /* NewEntryViewController.h */,
+				9A1A722E15F0102B00799C28 /* NewEntryViewController.m */,
+				9A1A722F15F0102B00799C28 /* NewEntryViewController.xib */,
+				9A02DBA815F02A2900243DBF /* DetailViewController.h */,
+				9A02DBA915F02A2900243DBF /* DetailViewController.m */,
+				9A02DBAA15F02A2900243DBF /* DetailViewController.xib */,
+			);
+			name = entryStuff;
+			sourceTree = "<group>";
+		};
 		9A1A71F715EFE5EB00799C28 = {
 			isa = PBXGroup;
 			children = (
@@ -106,24 +153,11 @@
 		9A1A720E15EFE5EC00799C28 /* myDiary */ = {
 			isa = PBXGroup;
 			children = (
-				9A1A721A15EFE5EC00799C28 /* myDiary.xcdatamodeld */,
+				9A02DBC915F0448900243DBF /* entryStuff */,
+				9A02DBC815F0446A00243DBF /* newFriends */,
+				9A02DBB315F03E2200243DBF /* databaseStuff */,
 				9A1A721715EFE5EC00799C28 /* AppDelegate.h */,
 				9A1A721815EFE5EC00799C28 /* AppDelegate.m */,
-				9A1A722215EFE6A200799C28 /* DiaryViewController.h */,
-				9A1A722315EFE6A200799C28 /* DiaryViewController.m */,
-				9A1A722415EFE6A200799C28 /* DiaryViewController.xib */,
-				9A1A722A15F00D9300799C28 /* DiaryStore.h */,
-				9A1A722B15F00D9300799C28 /* DiaryStore.m */,
-				9A1A722715F00D1100799C28 /* Entry.h */,
-				9A1A722815F00D1100799C28 /* Entry.m */,
-				9A1A723215F0182500799C28 /* EntryViewController.h */,
-				9A1A723315F0182500799C28 /* EntryViewController.m */,
-				9A02DBA815F02A2900243DBF /* DetailViewController.h */,
-				9A02DBA915F02A2900243DBF /* DetailViewController.m */,
-				9A02DBAA15F02A2900243DBF /* DetailViewController.xib */,
-				9A1A722D15F0102B00799C28 /* NewEntryViewController.h */,
-				9A1A722E15F0102B00799C28 /* NewEntryViewController.m */,
-				9A1A722F15F0102B00799C28 /* NewEntryViewController.xib */,
 				9A1A720F15EFE5EC00799C28 /* Supporting Files */,
 			);
 			path = myDiary;
@@ -192,9 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A1A721315EFE5EC00799C28 /* InfoPlist.strings in Resources */,
-				9A1A722615EFE6A200799C28 /* DiaryViewController.xib in Resources */,
 				9A1A723115F0102B00799C28 /* NewEntryViewController.xib in Resources */,
 				9A02DBAC15F02A2900243DBF /* DetailViewController.xib in Resources */,
+				9A02DBC715F0446100243DBF /* NewFriendViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,12 +242,14 @@
 				9A1A721515EFE5EC00799C28 /* main.m in Sources */,
 				9A1A721915EFE5EC00799C28 /* AppDelegate.m in Sources */,
 				9A1A721C15EFE5EC00799C28 /* myDiary.xcdatamodeld in Sources */,
-				9A1A722515EFE6A200799C28 /* DiaryViewController.m in Sources */,
-				9A1A722915F00D1100799C28 /* Entry.m in Sources */,
 				9A1A722C15F00D9300799C28 /* DiaryStore.m in Sources */,
 				9A1A723015F0102B00799C28 /* NewEntryViewController.m in Sources */,
 				9A1A723415F0182500799C28 /* EntryViewController.m in Sources */,
 				9A02DBAB15F02A2900243DBF /* DetailViewController.m in Sources */,
+				9A02DBB915F03F9C00243DBF /* Friend.m in Sources */,
+				9A02DBBF15F0400500243DBF /* Entry.m in Sources */,
+				9A02DBC215F0442200243DBF /* FriendTableViewController.m in Sources */,
+				9A02DBC615F0446100243DBF /* NewFriendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
