@@ -10,13 +10,9 @@ Example Problem: Given a knight on a position, can a knight get to some other gi
 	- This isn't a proper tree, however, because people can move back. 
 	- Each time you explore another node in the tree, leave a mark of the previous node that you've been to (to avoid making a very recursive algorithm).
 
-Pseudo Code:
 
-	currentPath = [start Pos]
-	while true //Loop forever to start
-		get_next_positions(currentPosition[-1])
-		
 
+Ned's example: 
 
 
 

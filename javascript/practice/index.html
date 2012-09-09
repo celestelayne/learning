@@ -1,3 +1,4 @@
+<html>
 <h1>Magic Johnson Javscript Testing :)</h1>
 <script src="script.js"> </script>
 <script type="text/javascript">
@@ -5,6 +6,27 @@
 window.onload = function() {
 	// get some keyword list
 	var keywordList = prompt("gimme a keyword list separated by commas");
+	
+	// Split the array
+	var arrayList = keywordList.split(',');
+	
+	// Build resulting html
+	var resultString = "";
+	for (var i=0; i < arrayList.length; i++) {
+		resultString += "keyword: " + arrayList[i] + "<br />";
+	}
+	
+	// print out the page
+	var blk = document.getElementById("result");
+	blk.innerHTML = resultString;
+	
 }
 
 </script>
+
+</head>
+<body>
+<div id="result"> </div>
+</body>
+
+</html>

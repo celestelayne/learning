@@ -1,0 +1,5 @@
+platform :ios
+
+dependency "RestKit"
+pod "RestKit"
+pod "JSONKit",  '~> 1.4'
