@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A14D11915F6CF460060052A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A14D11815F6CF460060052A /* GameKit.framework */; };
+		9A0D5AC215F52FA600C8F4AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D5AC115F52FA600C8F4AA /* UIKit.framework */; };
+		9A0D5AC415F52FA600C8F4AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D5AC315F52FA600C8F4AA /* Foundation.framework */; };
+		9A0D5AC615F52FA600C8F4AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D5AC515F52FA600C8F4AA /* CoreGraphics.framework */; };
+		9A0D5ACC15F52FA600C8F4AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A0D5ACA15F52FA600C8F4AA /* InfoPlist.strings */; };
+		9A0D5ACE15F52FA600C8F4AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D5ACD15F52FA600C8F4AA /* main.m */; };
+		9A0D5AD215F52FA600C8F4AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D5AD115F52FA600C8F4AA /* AppDelegate.m */; };
+		9A0D5ADF15F5305F00C8F4AA /* LabyrinthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D5ADD15F5305F00C8F4AA /* LabyrinthViewController.m */; };
+		9A0D5AE415F530C900C8F4AA /* LabyrinthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0D5AE315F530C900C8F4AA /* LabyrinthView.m */; };
+		9A0D5AE615F5310B00C8F4AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D5AE515F5310B00C8F4AA /* QuartzCore.framework */; };
+		9A0D5AE815F5311C00C8F4AA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D5AE715F5311C00C8F4AA /* CoreMotion.framework */; };
+		9A0D5AEA15F53F0A00C8F4AA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0D5AE915F53F0A00C8F4AA /* MobileCoreServices.framework */; };
+		9AADF88515F55B100049272A /* ball.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9AADF88415F55B100049272A /* ball.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A14D11815F6CF460060052A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		9A0D5ABD15F52FA600C8F4AA /* Labyrinth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labyrinth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A0D5AC115F52FA600C8F4AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9A0D5AC315F52FA600C8F4AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9A0D5AC515F52FA600C8F4AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9A0D5AC915F52FA600C8F4AA /* Labyrinth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Labyrinth-Info.plist"; sourceTree = "<group>"; };
+		9A0D5ACB15F52FA600C8F4AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A0D5ACD15F52FA600C8F4AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A0D5ACF15F52FA600C8F4AA /* Labyrinth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Labyrinth-Prefix.pch"; sourceTree = "<group>"; };
+		9A0D5AD015F52FA600C8F4AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9A0D5AD115F52FA600C8F4AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9A0D5ADC15F5305F00C8F4AA /* LabyrinthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabyrinthViewController.h; sourceTree = "<group>"; };
+		9A0D5ADD15F5305F00C8F4AA /* LabyrinthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabyrinthViewController.m; sourceTree = "<group>"; };
+		9A0D5AE215F530C900C8F4AA /* LabyrinthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabyrinthView.h; sourceTree = "<group>"; };
+		9A0D5AE315F530C900C8F4AA /* LabyrinthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabyrinthView.m; sourceTree = "<group>"; };
+		9A0D5AE515F5310B00C8F4AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9A0D5AE715F5311C00C8F4AA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		9A0D5AE915F53F0A00C8F4AA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		9AADF88415F55B100049272A /* ball.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ball.jpeg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A0D5ABA15F52FA600C8F4AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A14D11915F6CF460060052A /* GameKit.framework in Frameworks */,
+				9A0D5AEA15F53F0A00C8F4AA /* MobileCoreServices.framework in Frameworks */,
+				9A0D5AE815F5311C00C8F4AA /* CoreMotion.framework in Frameworks */,
+				9A0D5AE615F5310B00C8F4AA /* QuartzCore.framework in Frameworks */,
+				9A0D5AC215F52FA600C8F4AA /* UIKit.framework in Frameworks */,
+				9A0D5AC415F52FA600C8F4AA /* Foundation.framework in Frameworks */,
+				9A0D5AC615F52FA600C8F4AA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A0D5AB215F52FA600C8F4AA = {
+			isa = PBXGroup;
+			children = (
+				9A0D5AC715F52FA600C8F4AA /* Labyrinth */,
+				9A0D5AC015F52FA600C8F4AA /* Frameworks */,
+				9A0D5ABE15F52FA600C8F4AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A0D5ABE15F52FA600C8F4AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A0D5ABD15F52FA600C8F4AA /* Labyrinth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A0D5AC015F52FA600C8F4AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A14D11815F6CF460060052A /* GameKit.framework */,
+				9A0D5AE915F53F0A00C8F4AA /* MobileCoreServices.framework */,
+				9A0D5AE715F5311C00C8F4AA /* CoreMotion.framework */,
+				9A0D5AE515F5310B00C8F4AA /* QuartzCore.framework */,
+				9A0D5AC115F52FA600C8F4AA /* UIKit.framework */,
+				9A0D5AC315F52FA600C8F4AA /* Foundation.framework */,
+				9A0D5AC515F52FA600C8F4AA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A0D5AC715F52FA600C8F4AA /* Labyrinth */ = {
+			isa = PBXGroup;
+			children = (
+				9AADF88415F55B100049272A /* ball.jpeg */,
+				9A0D5AD015F52FA600C8F4AA /* AppDelegate.h */,
+				9A0D5AD115F52FA600C8F4AA /* AppDelegate.m */,
+				9A0D5ADC15F5305F00C8F4AA /* LabyrinthViewController.h */,
+				9A0D5ADD15F5305F00C8F4AA /* LabyrinthViewController.m */,
+				9A0D5AE215F530C900C8F4AA /* LabyrinthView.h */,
+				9A0D5AE315F530C900C8F4AA /* LabyrinthView.m */,
+				9A0D5AC815F52FA600C8F4AA /* Supporting Files */,
+			);
+			path = Labyrinth;
+			sourceTree = "<group>";
+		};
+		9A0D5AC815F52FA600C8F4AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A0D5AC915F52FA600C8F4AA /* Labyrinth-Info.plist */,
+				9A0D5ACA15F52FA600C8F4AA /* InfoPlist.strings */,
+				9A0D5ACD15F52FA600C8F4AA /* main.m */,
+				9A0D5ACF15F52FA600C8F4AA /* Labyrinth-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A0D5ABC15F52FA600C8F4AA /* Labyrinth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A0D5AD515F52FA600C8F4AA /* Build configuration list for PBXNativeTarget "Labyrinth" */;
+			buildPhases = (
+				9A0D5AB915F52FA600C8F4AA /* Sources */,
+				9A0D5ABA15F52FA600C8F4AA /* Frameworks */,
+				9A0D5ABB15F52FA600C8F4AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Labyrinth;
+			productName = Labyrinth;
+			productReference = 9A0D5ABD15F52FA600C8F4AA /* Labyrinth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A0D5AB415F52FA600C8F4AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = ChiefSquanto;
+			};
+			buildConfigurationList = 9A0D5AB715F52FA600C8F4AA /* Build configuration list for PBXProject "Labyrinth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A0D5AB215F52FA600C8F4AA;
+			productRefGroup = 9A0D5ABE15F52FA600C8F4AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A0D5ABC15F52FA600C8F4AA /* Labyrinth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A0D5ABB15F52FA600C8F4AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0D5ACC15F52FA600C8F4AA /* InfoPlist.strings in Resources */,
+				9AADF88515F55B100049272A /* ball.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A0D5AB915F52FA600C8F4AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0D5ACE15F52FA600C8F4AA /* main.m in Sources */,
+				9A0D5AD215F52FA600C8F4AA /* AppDelegate.m in Sources */,
+				9A0D5ADF15F5305F00C8F4AA /* LabyrinthViewController.m in Sources */,
+				9A0D5AE415F530C900C8F4AA /* LabyrinthView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9A0D5ACA15F52FA600C8F4AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A0D5ACB15F52FA600C8F4AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A0D5AD315F52FA600C8F4AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A0D5AD415F52FA600C8F4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A0D5AD615F52FA600C8F4AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Labyrinth/Labyrinth-Prefix.pch";
+				INFOPLIST_FILE = "Labyrinth/Labyrinth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9A0D5AD715F52FA600C8F4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Labyrinth/Labyrinth-Prefix.pch";
+				INFOPLIST_FILE = "Labyrinth/Labyrinth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A0D5AB715F52FA600C8F4AA /* Build configuration list for PBXProject "Labyrinth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A0D5AD315F52FA600C8F4AA /* Debug */,
+				9A0D5AD415F52FA600C8F4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A0D5AD515F52FA600C8F4AA /* Build configuration list for PBXNativeTarget "Labyrinth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A0D5AD615F52FA600C8F4AA /* Debug */,
+				9A0D5AD715F52FA600C8F4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A0D5AB415F52FA600C8F4AA /* Project object */;
+}
