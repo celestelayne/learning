@@ -18,7 +18,7 @@ How something scales (as a graph of the relationship of number of lines to probl
 
 ## A Problem
 	
-	I gice you an array arr with n elements, and you need to find, if it exists, the location of an element x.
+	If I give you an array 'arr' with 'n' elements, and you need to find, if it exists, the location of an element x.
 
 	n = 10
 	i = 0
@@ -32,11 +32,11 @@ How something scales (as a graph of the relationship of number of lines to probl
 	// O(n*n) => quadratic
 	// O(log(n)) => Logarithmic.
 
-You can't do better than linear in this kind of array because you have to check every possible case.
+You can't do better than a linear search in this kind of array because you have to check every possible case.
 
 Let's say we change the problem just a bit.
 
-	I give you a sorted array arr with n elmenets, and you need to find, if it exists, the location of an element x.
+	Iif I give you a sorted array arr with n elmenets, and you need to find, if it exists, the location of an element x.
 
 For example, when you're searching a sorted phonebook, you can:
 
