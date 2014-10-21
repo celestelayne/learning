@@ -1,1 +1,0 @@
-This is a repo that'll group together all of the small iOS exercises I'm working through.
