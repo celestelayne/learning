@@ -9,7 +9,7 @@ app.AppView = Backbone.View.extend({
     'keypress #new-todo': 'createOnEnter',
     'click #clear-completed': 'clearCompleted',
     'click #toggle-all': 'toggleAllComplete'
-  }
+  },
 
   initialize: function() {
     this.allCheckbox = this.$('#toggle-all')[0];
@@ -74,7 +74,7 @@ app.AppView = Backbone.View.extend({
         'completed': completed
       })
     });
-  }
+  },
 
   // Re-rendering the app view just changes statistics,
   // Todo views handle their own rendering
